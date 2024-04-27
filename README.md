@@ -20,7 +20,9 @@ Replace C:\ directories with an appropriate directory
 4. Steps are included in the code to save intermediate data frames to facilitate rerunning the code from various points. In some cases, the step of saving such a data frame may be commented out from the code, as that needed executed only once, specifically the lines below for data frame "dt_woe_listCV2_round_nonleak_Rmarkdown." Comment the below lines back in when running the code for the first time:
 
    #setwd("C:/Sue/PhD/_Ch4/FINAL2/")
+   
    #filename = paste("dt_woe_listCV2_round_nonleak", r, ".Rdata", col = '', sep = '')
+   
    #save(list = c("dt_woe_list_"), file = filename)
 
 4. Various parameters are specified based on the model's optimization; these AutoScore parameters may change if other parts of the code/process are changed:
