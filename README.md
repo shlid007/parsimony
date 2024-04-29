@@ -3,7 +3,7 @@ This code applies the AutoScore model from https://github.com/nliulab/AutoScore 
 Other notes regarding parsimony.md:
 1. "Train082123.Rdata" reflects modified column names to ensure no duplicate partial field names detected by AutoScore. The modified column names affected any column ending in and containing a single digit and starting with C, D, M, or V. E.g., column C1 was renamed to C01, D1 to D01, etc.
 
-Once the columns were renamed per the rule above, the following code was run to import the above Kaggle dataset (downloaded as a .csv file):
+2. Once the columns were renamed per the rule above, the following code was run to import the above Kaggle dataset (downloaded as a .csv file):
 
   #ONE-TIME
   #import raw file
