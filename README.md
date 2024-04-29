@@ -35,3 +35,6 @@ Replace C:\ directories with an appropriate directory
   
   #per log: best score threshold >= 46
   test_set_3$pred <-  ifelse(test_set_3$total_score >= 46, 1, 0)
+
+5. LASSO insignificant variables excluded from logistic regression identified by the comment below in the code. This list of variables may need modified if other changes are done in the code.
+   #limit to variables from LASSO
