@@ -25,7 +25,7 @@ Replace C:\ directories with an appropriate directory
    
    #save(list = c("dt_woe_list_"), file = filename)
 
-4. Various parameters are specified based on the model's optimization; these AutoScore parameters may change if other parts of the code/process are changed:
+5. Various parameters are specified based on the model's optimization; these AutoScore parameters may change if other parts of the code/process are changed:
 
   numvar <- 37 #obtained by visually inspecting parsimony plot for where curve flattens out
   
@@ -36,5 +36,5 @@ Replace C:\ directories with an appropriate directory
   #per log: best score threshold >= 46
   test_set_3$pred <-  ifelse(test_set_3$total_score >= 46, 1, 0)
 
-5. LASSO insignificant variables excluded from logistic regression identified by the comment below in the code. This list of variables may need modified if other changes are done in the code.
+6. LASSO insignificant variables excluded from logistic regression identified by the comment below in the code. This list of variables may need modified if other changes are done in the code.
    #limit to variables from LASSO
